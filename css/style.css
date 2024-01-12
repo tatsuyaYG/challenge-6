@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/**
+ *  Foundation
+ * ============================ */
+/*****************************
+* A Modern CSS Reset (https://github.com/hankchizljaw/modern-css-reset)
+* 上記に、ul要素,ol要素,a要素への記述追加
+*****************************/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: initial;
+}
+
+html {
+  font-size: 100%;
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 4.2666666667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.6842105263vw;
+  }
+}
+@media (min-width: 950px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: "zen-old-mincho", sans-serif;
+  color: #000;
+  font-size: 0.9375rem;
+}
+
+/**
+  *  Layout
+  * ============================ */
+/**
+  *  Object
+  * ============================ */
+/* Component ----------------*/
+/* Project ------------------*/
+/* Utility -------------------*/
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.u-separate {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.u-back {
+  background-color: #000;
+}
+
+.u-back-black {
+  background-color: #000;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+@use "../../foundation/" as *;
+
+.u-mobile {
+  @include mq(md) {
+    display: none;
+  }
+}
