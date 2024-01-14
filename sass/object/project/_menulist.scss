@@ -1,0 +1,51 @@
+@use "../../foundation/" as *;
+
+.p-menulist{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+  @include mq(md){
+    opacity: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: rem(80);
+    gap: rem(32);
+  }
+  &__item{
+    padding-top: rem(24);
+    a{
+      color: $white;
+      line-height: calc(1.65);
+      // transform: translate3d(0, 100%, 0);
+
+      // &.active{
+        // transform: translate3d(0, 0, 0);
+      // }
+    }
+  }
+  &__resave{
+    width: rem(170);
+    height: rem(50);
+    border: solid 1px $white;
+    display: table;
+    padding-top: 0;
+    margin-top: rem(24);
+    a{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+
+  &.active{
+    pointer-events: all;
+    opacity: 1;
+    li{
+      z-index: 1;
+    }
+  }
+}

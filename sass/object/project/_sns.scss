@@ -1,0 +1,38 @@
+@use "../../foundation/" as *;
+
+.p-sns{
+  display: flex;
+  justify-content: flex-end;
+  padding: rem(24);
+  opacity: 0;
+  transition: opacity 0.5s;
+  gap: rem(20);
+  &.active{
+    opacity: 1;
+    li{
+      z-index: 1;
+    }
+    }
+
+  &__icon{
+    height: rem(20);
+    width: rem(20);
+  }
+}
+
+.p-sns--PC{
+  display: none;
+  @include mq(md){
+    writing-mode: vertical-rl;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: rem(32);
+    display: flex;
+    gap: rem(24);
+    justify-content: center;
+    a{
+      color: $white;
+    }
+  }
+}

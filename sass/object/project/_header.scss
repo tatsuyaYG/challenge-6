@@ -1,0 +1,54 @@
+@use "../../foundation/" as *;
+
+.p-header{
+  height: 100vh;
+  background-color: $text;
+  position: relative;
+  top:0;
+
+  @include mq(md){
+    height: rem(764);
+  }
+
+  &__logo{
+    display: block;
+    height: rem(100);
+    width: rem(100);
+    position: absolute;
+    top: rem(20);
+    left: rem(20);
+    z-index: 1;
+    @include mq(md){
+      height: rem(157);
+      width: rem(137);
+      top: rem(24);
+      left: rem(80);
+    }
+    img{
+      margin: auto;
+    }
+  }
+
+  &__textarea{
+    position: absolute;
+    top: 30%;
+    margin-left: rem(30);
+    @include mq(md){
+      top:rem(294);
+      left: rem(200);
+    }
+  }
+
+  &__text{
+    color: $white;
+    font-size: rem(30);
+    @include mq(md){
+      font-size: rem(48);
+    }
+    &--small{
+      font-size: rem(16);
+      padding-top: rem(30);
+    }
+  }
+
+}

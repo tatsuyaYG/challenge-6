@@ -1,0 +1,41 @@
+@use "../../foundation/" as *;
+
+.c-menubutton {
+  position: absolute;
+  top: 40px;
+  right: 16px;
+  height: 3px;
+  width: rem(30);
+  background-color: $white;
+  // transition: all 0.3s;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &::before {
+    transition: 0.2s;
+    top: -10px;
+  }
+  &::after {
+    transition: 0.2s;
+    top: 10px;
+  }
+
+  &.active {
+    background-color: $text;
+    z-index: 1;
+    &::before {
+      transform: translateY(10px) translateX(-15px) rotate(45deg);
+    }
+    &::after {
+      transform: translateY(-10px) translateX(-15px) rotate(-45deg);
+    }
+  }
+}

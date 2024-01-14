@@ -12,27 +12,164 @@
     />
     <!--フォント-->
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'duq3cnh',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: "duq3cnh",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
     <!--CSS-->
     <link rel="stylesheet" href="/css/style.css" />
     <!--jQuery-->
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <!--Javascript-->
+    <script defer src="./js/active.js"></script>
   </head>
 
   <body class="l-inner">
-    <p>大切な人と過ごす場所</p>
-    <p>Cocomate</p>
+    <header class="p-header">
+      <div class="p-header__logo">
+        <img src="./image/logo/logo.png" alt="ロゴマーク" />
+        <img src="./image/logo/cocomate.png" alt="cocomate" />
+      </div>
+      <!-- メインビジュアル -->
+      <ul class="p-mainvisual">
+        <li class="p-mainvisual__item">
+          <img src="./image/fv/main-visual-1.jpg" alt="" />
+        </li>
+      </ul>
+      <!-- メニュー -->
+      <div class="c-menubutton u-none"></div> <!-- ハンバーガーメニュー -->
+      <nav class="p-menu--SP u-contents">
+        <nav class="p-menu--PC">
+          <ul class="p-menulist">
+            <li class="p-menulist__item">
+              <a href="#about">ここめいとについて</a>
+            </li>
+            <li class="p-menulist__item">
+              <a href="#guestroom">宿泊</a>
+            </li>
+            <li class="p-menulist__item">
+              <a href="#dining">お食事</a>
+            </li>
+            <li class="p-menulist__item">
+              <a href="#activity">体験</a>
+            </li>
+            <li class="p-menulist__item">
+              <a href="#access">アクセス</a>
+            </li>
+            <li class="p-menulist__item">
+              <a href="#contact">お問合せ</a>
+            </li>
+            <li class="p-menulist__item p-menulist__resave">
+              <a href="#">ご予約はこちら</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- SPのみ -->
+        <div class="u-none">
+          <ul class="p-sns">
+            <li class="p-sns__icon p-sns__icon--insta"><img src="./image/logo/Instagram_Glyph_White.png" alt="instagramロゴ"></li>
+            <li class="p-sns__icon p-sns__icon--insta"><img src="./image/logo/logo-white.png" alt="Xロゴ"></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- PCのみ -->
+      <ul class="p-sns--PC">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+
+      <div class="p-header__textarea">
+        <p class="p-header__text">
+          大切な人と過ごす場所、<br />
+          ここめいと。
+        </p>
+        <p class="p-header__text p-header__text--small u-font--en">
+          A place to spend time with loved ones, cocomate.
+        </p>
+      </div>
+      <div class="p-bg"></div>
+    </header>
+    <main>
+      <section class="p-about">
+        <div class="p-icon--about">
+          <p class="p-icon__01"><img src="./image/cloud/cloud-1.png" alt=""></p>
+          <p class="p-icon__02">
+            <img src="./image/cloud/cloud-2-1.png" alt="">
+            <img src="./image/cloud/cloud-2.png" alt="">
+          </p>
+          <p class="p-icon__03">
+            <img src="./image/cloud/cloud-3.png" alt="">
+            <img src="./image/cloud/cloud-3-1.png" alt="">
+          </p>
+          <p class="p-icon__04">
+            <img src="./image/cloud/cloud-3-1.png" alt="">
+            <img src="./image/cloud/cloud-3.png" alt="">
+          </p>
+        </div>
+        <div class="p-about__content">
+          <h1 class="p-about__title u-font--en">Cocomate Stay</h1>
+          <div class="p-about__text">
+            <p>
+              大切な人と過ごす場所、<br>
+              ここめいと。<br>
+              日本の伝統と<br>
+              現代の快適さが融合した、<br>
+              穏やかな空間で<br>
+              お迎えいたします。
+            </p>
+            <p>
+              四季折々の風情が楽しめる<br>
+              ロケーションが特徴です。
+            </p>
+            <p>
+              春は桜が咲き誇り<br>
+              夏は青々とした自然が<br>
+              目を楽しませ、<br>
+              秋は紅葉が鮮やかに染まり<br>
+              冬は雪景色が<br>
+              美しい風景が広がります。<br>
+              季節ごとの風情を<br>
+              お楽しみいただきながら、<br>
+              特別な思い出をつくりませんか。
+            </p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li><img src="./image/about/about-1.jpg" alt=""></li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

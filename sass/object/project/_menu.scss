@@ -1,0 +1,11 @@
+@use "../../foundation/" as *;
+
+.p-menu--SP{
+  position: absolute;
+  right: 0;
+  margin-right: rem(20);
+  top: 20%;
+
+  @include mq(md){
+  }
+}

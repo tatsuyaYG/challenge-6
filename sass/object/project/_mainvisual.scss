@@ -1,0 +1,25 @@
+@use "../../foundation/" as *;
+
+.p-mainvisual{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: rem(70) rem(25);
+  position: absolute;
+  @include mq(md){
+    margin: 0;
+    padding: rem(100) rem(100) rem(80) rem(100);
+  }
+
+  &__item{
+    height: 100%;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      @include mq(md){
+        object-fit: inherit;
+      }
+    }
+  }
+}

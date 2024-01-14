@@ -1,0 +1,41 @@
+@use "../../foundation/" as *;
+
+.p-about{
+  position: relative;
+  height: auto;
+  &__content{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    font-size: rem(50);
+    font-weight: normal;
+    margin-top: rem(70);
+    @include mq(md){
+      font-size: rem(130);
+      margin-top: rem(200);
+    }
+  }
+  &__text{
+    writing-mode: vertical-rl;
+    margin-top: rem(40);
+    font-size: rem(14);
+    line-height: 1.2;
+    p:nth-child(2){
+      padding: 0 rem(5);
+    }
+    @include mq(md){
+      font-size: rem(15);
+      line-height: 1.8;
+      p:nth-child(2){
+        padding: 0 rem(32);
+      }
+    }
+  }
+}

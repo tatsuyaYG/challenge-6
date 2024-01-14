@@ -1,0 +1,17 @@
+@use "../../foundation/" as *;
+
+.p-bg{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: rgb(25, 25, 25);
+  opacity: 0.8;
+  z-index: -1;
+  @include mq(md){
+    display: none;
+  }
+  &.active{
+    z-index: 0;
+  }
+}

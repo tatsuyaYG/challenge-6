@@ -21,15 +21,28 @@
 
 /* Component ----------------*/
 
+@use "./object/component/button";
+@use "./object/component/menubutton";
+
 
 /* Project ------------------*/
 
+@use "./object/project/header.scss";
+@use "./object/project/menulist";
+@use "./object/project/mainvisual";
+@use "./object/project/p-bg";
+@use "./object/project/sns";
+@use "./object/project/menu";
+@use "./object/project/icon";
+@use "./object/project/about";
 
 /* Utility -------------------*/
 
 @use "./object/utility/u-desktop";
 @use "./object/utility/u-mobile";
 @use "./object/utility/u-separate";
-@use "./object/utility/u-back-black";
+@use "./object/utility/u-bg--black";
+@use "./object/utility/u-font--en";
+@use "./object/utility/u-sp-onley";
 
 
