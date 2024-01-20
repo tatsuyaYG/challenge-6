@@ -30,6 +30,7 @@
     margin-bottom: rem(50);
     @include mq(md){
       margin-bottom: rem(160);
+      width: 100%;
     }
   }
 }

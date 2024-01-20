@@ -20,6 +20,8 @@
     a{
       color: $white;
       line-height: calc(1.65);
+      letter-spacing: 0.2em;
+
       // transform: translate3d(0, 100%, 0);
 
       // &.active{
@@ -29,7 +31,7 @@
   }
   &__resave{
     width: rem(170);
-    height: rem(50);
+    height: rem(55);
     border: solid 1px $white;
     display: table;
     padding-top: 0;
@@ -73,6 +75,7 @@
     width: rem(170);
     height: rem(50);
     border: solid 1px $white;
+
     display: table;
     padding-bottom: 0;
     margin-top: rem(16);

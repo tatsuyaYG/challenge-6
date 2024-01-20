@@ -1,0 +1,31 @@
+@use "../../foundation/" as *;
+
+.p-slider--main{
+  &__item{
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.p-slider--about{
+  width: 100%;
+  &__item{
+    margin:rem(20);
+    img{
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+.p-slider--gallery{
+  width: 100%;
+  &__item{
+    margin:rem(20);
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

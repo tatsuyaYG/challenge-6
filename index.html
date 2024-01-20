@@ -43,13 +43,11 @@
       })(document);
     </script>
     <!--CSS-->
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
-    <!--jQuery-->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script> -->
+    <!--jQuery本体-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!--Javascript-->
     <script defer src="./js/active.js"></script>
     <script defer src="./js/matchmedia.js"></script>
@@ -62,10 +60,17 @@
         <img src="./image/logo/cocomate.png" alt="cocomate" />
       </div>
       <!-- メインビジュアル -->
-      <ul class="p-mainvisual">
-        <li class="p-mainvisual__item">
+      <ul class="p-mainvisual p-slider--main">
+        <li class="p-mainvisual__item p-slider--main__item">
           <img src="./image/fv/main-visual-1.jpg" alt="" />
         </li>
+        <li class="p-mainvisual__item p-slider--main__item">
+          <img src="./image/fv/main-visual-2.jpg" alt="" />
+        </li>
+        <li class="p-mainvisual__item p-slider--main__item">
+          <img src="./image/fv/main-visual-3.jpg" alt="" />
+        </li>
+
       </ul>
       <!-- メニュー -->
       <div class="c-menubutton u-none"></div> <!-- ハンバーガーメニュー -->
@@ -88,7 +93,7 @@
               <a href="#access">アクセス</a>
             </li>
             <li class="p-menulist__item">
-              <a href="#contact">お問合せ</a>
+              <a href="#contact">お問い合せ</a>
             </li>
             <li class="p-menulist__item p-menulist__resave">
               <a href="#">ご予約はこちら</a>
@@ -118,8 +123,10 @@
           A place to spend time with loved ones, cocomate.
         </p>
       </div>
+
       <div class="p-bg"></div>
     </header>
+
     <main>
       <section class="p-about">
         <div class="p-about__erea">
@@ -166,8 +173,13 @@
           </div>
         </div>
         <div>
-          <ul>
-            <li><img src="./image/about/about-1.jpg" alt=""></li>
+          <ul class="p-about__img p-slider--about">
+            <li class="p-slider--about__item"><img src="./image/about/about-5.jpg" alt=""></li>
+            <li class="p-slider--about__item"><img src="./image/about/about-3.jpg" alt=""></li>
+            <li class="p-slider--about__item"><img src="./image/about/about-4.jpg" alt=""></li>
+            <li class="p-slider--about__item"><img src="./image/about/about.jpg" alt=""></li>
+            <li class="p-slider--about__item"><img src="./image/about/about-2.jpg" alt=""></li>
+            <li class="p-slider--about__item"><img src="./image/about/about-1.jpg" alt=""></li>
           </ul>
         </div>
       </section>
@@ -342,6 +354,7 @@
           </a>
         </div>
       </article>
+      <!-- /p-news -->
       <section class="p-gallery">
         <div class="p-title p-gallery__title">
           <h1 class="p-title__en">Gallery</h1>
@@ -352,11 +365,15 @@
           <a class="c-arrowbutton" href=""></a>
         </div>
         <div class="p-gallery__img">
-          <ul>
-            <li><img src="./image/galery/galery-1.jpg" alt=""></li>
+          <ul class="p-slider--gallery">
+            <li class="p-slider--gallery__item"><img src="./image/galery/galery-1.jpg" alt=""></li>
+            <li class="p-slider--gallery__item"><img src="./image/galery/galery-2.jpg" alt=""></li>
+            <li class="p-slider--gallery__item"><img src="./image/galery/galery-3.jpg" alt=""></li>
+            <li class="p-slider--gallery__item"><img src="./image/galery/galery-4.jpg" alt=""></li>
           </ul>
         </div>
       </section>
+      <!-- /p-gallery -->
       <section class="p-reserv">
         <div class="p-reserv__bg c-back--black50"></div>
         <div class="p-title p-reserv__title u-font--opacity60">
@@ -367,6 +384,7 @@
           <a class="p-reserv__tel" href="tel:117"><small>Tel.</small> 022-1234-5678</a>
         </div>
       </section>
+      <!-- /p-reserv -->
       <section class="p-access">
         <div class="p-title p-access__title">
           <h1 class="p-title__en">Access</h1>
@@ -382,6 +400,7 @@
         </div>
         <img class="p-access__map" src="./image/access/access.png" alt="地図">
       </section>
+      <!-- /p-access -->
     </main>
     <footer class="p-footer">
       <div class="p-footer__logo c-logo">
@@ -406,7 +425,7 @@
             <a href="#access">アクセス</a>
           </li>
           <li class="p-menulist--footer__item">
-            <a href="#contact">お問合せ</a>
+            <a href="#contact">お問い合せ</a>
           </li>
           <li class="p-menulist--footer__item p-menulist--footer__resave">
             <a href="#">ご予約はこちら</a>
@@ -425,5 +444,8 @@
         <p><small>Copyright(c) cocomate All Rights Reserver</small></p>
       </div>
     </footer>
+    <!-- /p-footer -->
+    <script src="js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

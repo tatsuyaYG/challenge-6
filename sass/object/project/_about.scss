@@ -5,7 +5,7 @@
     position: relative;
     margin-bottom: rem(60);
     @include mq(md){
-      margin-bottom: rem(120);
+      margin-bottom: rem(55);
     }
   }
   &__content{
@@ -21,6 +21,7 @@
     @include mq(md){
       font-size: rem(130);
       margin-top: rem(200);
+      letter-spacing: 0.045em;
     }
   }
   &__text{
@@ -32,8 +33,9 @@
       padding: 0 rem(8);
     }
     @include mq(md){
+      margin-top: rem(10);
       font-size: rem(15);
-      line-height: 1.8;
+      line-height: 1.95;
       p:nth-child(2){
         padding: 0 rem(32);
       }

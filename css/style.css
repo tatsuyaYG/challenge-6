@@ -227,11 +227,12 @@ body {
 @media screen and (min-width: 768px) {
   .c-logo {
     height: 9.8125rem;
-    width: 8.5625rem;
+    width: 9.8125rem;
   }
 }
 .c-logo img {
   margin: auto;
+  margin-bottom: 0.9375rem;
 }
 
 /* Project ------------------*/
@@ -266,12 +267,13 @@ body {
 @media screen and (min-width: 768px) {
   .p-header__textarea {
     top: 18.375rem;
-    left: 12.5rem;
+    left: 10.5rem;
   }
 }
 .p-header__text {
   color: #fff;
   font-size: 1.875rem;
+  letter-spacing: 0.05em;
 }
 @media screen and (min-width: 768px) {
   .p-header__text {
@@ -328,10 +330,11 @@ body {
 .p-menulist__item a {
   color: #fff;
   line-height: 1.65;
+  letter-spacing: 0.2em;
 }
 .p-menulist__resave {
   width: 10.625rem;
-  height: 3.125rem;
+  height: 3.4375rem;
   border: solid 1px #fff;
   display: table;
   padding-top: 0;
@@ -471,7 +474,7 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    right: 2rem;
+    right: 2.25rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -516,7 +519,7 @@ body {
   .p-icon__02 {
     height: 370px;
     width: 360px;
-    bottom: -140px;
+    bottom: -110px;
   }
   .p-icon__02 img:nth-child(2) {
     bottom: 70px;
@@ -541,6 +544,7 @@ body {
   .p-icon__03 {
     width: 200px;
     top: 120px;
+    right: 80px;
   }
   .p-icon__03 img:nth-child(2) {
     bottom: 30px;
@@ -565,7 +569,7 @@ body {
 @media screen and (min-width: 768px) {
   .p-icon__04 {
     width: 200px;
-    left: 50px;
+    left: 60px;
     bottom: -50px;
   }
   .p-icon__04 img:nth-child(2) {
@@ -616,7 +620,7 @@ body {
   .p-icon__06 {
     width: 337px;
     height: 311px;
-    bottom: 0;
+    bottom: -235px;
   }
   .p-icon__06 img:nth-child(2) {
     bottom: 30px;
@@ -641,7 +645,8 @@ body {
 @media screen and (min-width: 768px) {
   .p-icon__07 {
     width: 200px;
-    top: 120px;
+    top: 85px;
+    right: -105px;
   }
   .p-icon__07 img:nth-child(2) {
     bottom: 30px;
@@ -655,7 +660,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-about__erea {
-    margin-bottom: 7.5rem;
+    margin-bottom: 3.4375rem;
   }
 }
 .p-about__content {
@@ -683,6 +688,7 @@ body {
   .p-about__title {
     font-size: 8.125rem;
     margin-top: 12.5rem;
+    letter-spacing: 0.045em;
   }
 }
 .p-about__text {
@@ -698,8 +704,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-about__text {
+    margin-top: 0.625rem;
     font-size: 0.9375rem;
-    line-height: 1.8;
+    line-height: 1.95;
   }
   .p-about__text p:nth-child(2) {
     padding: 0 2rem;
@@ -719,6 +726,7 @@ body {
   .p-title__en {
     font-size: 10rem;
     line-height: 1;
+    letter-spacing: 0.04em;
   }
 }
 .p-title__ja {
@@ -737,7 +745,7 @@ body {
     font-size: 1.25rem;
     letter-spacing: -4px;
     top: 0;
-    left: 110px;
+    left: 120px;
   }
 }
 
@@ -765,8 +773,8 @@ body {
   .p-guestroom__title {
     margin-top: 0;
     position: absolute;
-    top: 140px;
-    left: 10rem;
+    top: 7.5rem;
+    left: 7.5rem;
   }
 }
 .p-guestroom__content {
@@ -776,7 +784,7 @@ body {
   .p-guestroom__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 18.4375rem;
+    margin-top: 13.4375rem;
   }
 }
 .p-guestroom__text {
@@ -789,14 +797,8 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-left: 12.1875rem;
+  padding-top: 7.1875rem;
 }
 .p-guestroom__button {
   margin-top: 1.875rem;
@@ -841,7 +843,7 @@ body {
   .p-dining__title {
     margin-top: 0;
     position: absolute;
-    top: 140px;
+    top: 160px;
     left: 41.875rem;
   }
 }
@@ -852,7 +854,7 @@ body {
   .p-dining__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 18.4375rem;
+    margin-top: 16.375rem;
   }
 }
 .p-dining__text {
@@ -885,6 +887,7 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-left: 7.5rem;
+    padding-top: 10px;
   }
 }
 .p-dining__button {
@@ -1249,6 +1252,7 @@ body {
 @media screen and (min-width: 768px) {
   .p-gallery__img {
     margin-bottom: 10rem;
+    width: 100%;
   }
 }
 
@@ -1403,6 +1407,33 @@ body {
   .p-footer__terms {
     grid-column: 5/6;
   }
+}
+
+.p-slider--main__item img {
+  height: 100%;
+  width: 100%;
+}
+
+.p-slider--about {
+  width: 100%;
+}
+.p-slider--about__item {
+  margin: 1.25rem;
+}
+.p-slider--about__item img {
+  height: auto;
+  width: 100%;
+}
+
+.p-slider--gallery {
+  width: 100%;
+}
+.p-slider--gallery__item {
+  margin: 1.25rem;
+}
+.p-slider--gallery__item img {
+  height: 100%;
+  width: 100%;
 }
 
 /* Utility -------------------*/

@@ -27,13 +27,14 @@
     margin-left: rem(30);
     @include mq(md){
       top:rem(294);
-      left: rem(200);
+      left: rem(168);
     }
   }
 
   &__text{
     color: $white;
     font-size: rem(30);
+    letter-spacing: 0.05em;
     @include mq(md){
       font-size: rem(48);
     }

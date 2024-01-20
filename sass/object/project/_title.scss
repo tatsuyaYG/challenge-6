@@ -11,6 +11,7 @@
     @include mq(md){
       font-size: rem(160);
       line-height: 1;
+      letter-spacing: 0.04em;
     }
   }
   &__ja{
@@ -25,7 +26,7 @@
       font-size: rem(20);
       letter-spacing: -4px;
       top: 0;
-      left: 110px;
+      left: 120px;
     }
   }
 }

@@ -6,9 +6,10 @@
   width: rem(100);
   @include mq(md){
     height: rem(157);
-    width: rem(137);
+    width: rem(157);
   }
   img{
     margin: auto;
+    margin-bottom: rem(15);
   }
 }
