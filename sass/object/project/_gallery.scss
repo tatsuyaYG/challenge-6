@@ -1,0 +1,35 @@
+@use "../../foundation/" as *;
+
+.p-gallery{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(50);
+
+  &__title{
+    @include mq(md){
+      position: absolute;
+      left: rem(120);
+      top: rem(70);
+    }
+  }
+    &__link{
+    margin-top: rem(30);
+    gap: rem(20);
+    margin-left: auto;
+    padding-right: rem(30);
+    margin-bottom: rem(30);
+    @include mq(md){
+      padding-right: rem(120);
+      margin-top: rem(236);
+      margin-bottom: rem(53);
+    }
+  }
+  &__img{
+    margin-bottom: rem(50);
+    @include mq(md){
+      margin-bottom: rem(160);
+    }
+  }
+}

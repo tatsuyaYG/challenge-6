@@ -1,11 +1,5 @@
 @use "../../foundation/" as *;
 
-.u-contents{
-  @include mq(md){
-    display: contents;
-  }
-}
-
 .u-none{
   @include mq(md){
     display: none;

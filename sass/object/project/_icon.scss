@@ -1,24 +1,36 @@
 @use "../../foundation/" as *;
 
 .p-icon--about{
-  position: relative;
-  height: rem(600);
-  width: 100%;
-  @include mq(md){
-    height: rem(800);
-  }
+  // position: relative;
+  // height: rem(600);
+  // width: 100%;
+  // @include mq(md){
+  //   height: rem(800);
+  // }
+}
+.p-icon--guestroom{
+  // display: none;
+  // position: relative;
+  // height: rem(600);
+  // width: 100%;
+  // @include mq(md){
+    // height: rem(800);
+  // }
 }
 
 .p-icon{
   &__01{
+    position: absolute;
     width: 70%;
+    z-index: -1;
   }
   &__02{
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -140px;
     height: 210px;
     width: 200px;
+    z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
@@ -28,7 +40,7 @@
     @include mq(md){
       height: 370px;
       width: 360px;
-      bottom: -50px;
+      bottom: -140px;
       img{
         &:nth-child(2){
           bottom: 70px;
@@ -43,6 +55,7 @@
     top: 40px;
     height: 100px;
     width: 100px;
+    z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
@@ -65,9 +78,10 @@
   &__04{
     position: absolute;
     left: 20px;
-    bottom: 20px;
+    bottom: -100px;
     height: 100px;
     width: 100px;
+    z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
@@ -77,11 +91,91 @@
     }
     @include mq(md){
       width: 200px;
-      left: 90px;
+      left: 50px;
+      bottom: -50px;
       img{
         &:nth-child(2){
           bottom: 30px;
           right: -35px
+        }
+      }
+    }
+  }
+
+  &__05{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    img{
+      position: absolute;
+      &:nth-child(2){
+        top: -16px;
+        right: 22px
+      }
+    }
+    @include mq(md){
+      width: 200px;
+      top: 120px;
+      img{
+        &:nth-child(2){
+          top: -16px;
+          right: 22px;
+        }
+      }
+    }
+  }
+
+  &__06{
+    position: absolute;
+    left: 0;
+    // top: 15px;
+    height: 150px;
+    width: 160px;
+    z-index: -1;
+    img{
+      position: absolute;
+      &:nth-child(2){
+        top: -2px;
+        left: 4px;
+      }
+    }
+    @include mq(md){
+      width: 337px;
+      height: 311px;
+      bottom: 0;
+      img{
+        &:nth-child(2){
+          bottom: 30px;
+          right: 90px
+        }
+      }
+    }
+  }
+
+  &__07{
+    position: absolute;
+    right: 30px;
+    top:300px;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    img{
+      position: absolute;
+      &:nth-child(2){
+        bottom: 63px;
+        right: 35px
+      }
+    }
+    @include mq(md){
+      width: 200px;
+      top: 120px;
+      img{
+        &:nth-child(2){
+          bottom: 30px;
+          right: 90px
         }
       }
     }

@@ -1,0 +1,7 @@
+@use "../../foundation/" as *;
+
+.u-contents{
+  @include mq(md){
+    display: contents;
+  }
+}

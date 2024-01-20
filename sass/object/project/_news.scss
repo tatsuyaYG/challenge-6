@@ -1,0 +1,66 @@
+@use "../../foundation/" as *;
+
+.p-news{
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(50);
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+  @include mq(md){
+    padding: rem(180) rem(120) rem(160);
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+  }
+
+  &__link{
+    margin-top: rem(30);
+    gap: rem(20);
+    @include mq(md){
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+    }
+  }
+  &__list{
+    margin-top: rem(30);
+    @include mq(md){
+      grid-row: 1 / 3;
+      grid-column: 2 /3;
+    }
+  }
+  &__item{
+    color: $text;
+    display: grid;
+    grid-template-columns: 0.3fr 0.6fr 0.1fr;
+    align-items: center;
+    gap: rem(20);
+    font-size: rem(13);
+    padding: rem(15) 0;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url(../../../image/Subtract.png);
+      height: 11px;
+      width: 9px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.5s;
+    }
+    &:hover{
+      opacity: 0.7;
+      &::before{
+        right: -10px;
+      }
+    }
+    @include mq(md){
+      font-size: rem(15);
+    }
+    img{
+    }
+    p{
+    }
+  }
+}

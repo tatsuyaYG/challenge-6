@@ -1,0 +1,31 @@
+@use "../../foundation/" as *;
+
+.p-title{
+  position: relative;
+  &__en{
+    font-family: 'garamond-premier-pro', serif;
+    font-size: rem(50);
+    font-weight: normal;
+    color: $text-en;
+
+    @include mq(md){
+      font-size: rem(160);
+      line-height: 1;
+    }
+  }
+  &__ja{
+    position: absolute;
+    writing-mode: vertical-rl;
+    font-size: rem(10);
+    line-height: 1;
+    letter-spacing: 0.04em;
+    top:0;
+    left: 30px;
+    @include mq(md){
+      font-size: rem(20);
+      letter-spacing: -4px;
+      top: 0;
+      left: 110px;
+    }
+  }
+}

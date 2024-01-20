@@ -1,0 +1,21 @@
+@use "../../foundation/" as *;
+
+.u-font--en{
+  font-family: 'garamond-premier-pro', serif;
+}
+
+.u-font--opacity20{
+  opacity: 0.2;
+}
+
+.u-font--opacity60{
+  opacity: 0.6;
+}
+
+.u-font--white{
+  color: $white;
+}
+
+.u-font--8rem{
+  font-size: rem(8);
+}

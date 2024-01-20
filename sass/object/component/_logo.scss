@@ -1,0 +1,14 @@
+@use "../../foundation/" as *;
+
+.c-logo{
+  display: block;
+  height: rem(100);
+  width: rem(100);
+  @include mq(md){
+    height: rem(157);
+    width: rem(137);
+  }
+  img{
+    margin: auto;
+  }
+}

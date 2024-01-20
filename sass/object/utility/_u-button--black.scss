@@ -5,9 +5,9 @@
   height: 120%;
 }
 
-.u-bg--black{
+.u-button--transparent{
   border-color: $white;
-  background-color: $white;
+  background-color: transparent;
   a{
     color: $white;
   }
@@ -22,6 +22,7 @@
 
   &::before{
   border-color: $white;
-  background-color: $text;
+
+  background-color: transparent;
   }
 }

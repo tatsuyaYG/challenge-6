@@ -23,6 +23,10 @@
 
 @use "./object/component/button";
 @use "./object/component/menubutton";
+@use "./object/component/arrowbutton";
+@use "./object/component/separator";
+@use "./object/component/back--black50";
+@use "./object/component/logo";
 
 
 /* Project ------------------*/
@@ -35,14 +39,29 @@
 @use "./object/project/menu";
 @use "./object/project/icon";
 @use "./object/project/about";
+@use "./object/project/title"; /* guestroomより前に置く */
+@use "./object/project/guestroom";
+@use "./object/project/dining";
+@use "./object/project/activity";
+@use "./object/project/detail";
+@use "./object/project/news";
+@use "./object/project/link";
+@use "./object/project/gallery";
+@use "./object/project/reserv";
+@use "./object/project/access";
+@use "./object/project/footer";
 
 /* Utility -------------------*/
 
 @use "./object/utility/u-desktop";
 @use "./object/utility/u-mobile";
 @use "./object/utility/u-separate";
-@use "./object/utility/u-bg--black";
-@use "./object/utility/u-font--en";
-@use "./object/utility/u-sp-onley";
+@use "./object/utility/u-button--black";
+@use "./object/utility/u-font";
+@use "./object/utility/u-contents";
+@use "./object/utility/u-paddingtop--50";
+@use "./object/utility/u-lineheight--50";
+@use "./object/utility/u-none";
+@use "./object/utility/_u-sns--footer.scss";
 
 

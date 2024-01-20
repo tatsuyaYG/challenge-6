@@ -1,0 +1,11 @@
+@use "../../foundation/" as *;
+
+.c-separator{
+  &::after{
+    content: "";
+    position: absolute;
+    border-top: solid 1px $white;
+    width: 100%;
+    bottom: 0;
+  }
+}

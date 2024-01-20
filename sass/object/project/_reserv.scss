@@ -1,0 +1,53 @@
+@use "../../foundation/" as *;
+
+.p-reserv{
+  background-image: url(../../../image/reservation/reservation.jpg);
+  position: relative;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  @include mq(md){
+    justify-content: flex-start;
+  }
+  &__title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include mq(md){
+      left: initial;
+      top: initial;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__content{
+    color: $white;
+    line-height: 1.6;
+    padding-top: rem(167);
+    padding-bottom: rem(166);
+    @include mq(md){
+      padding-left: rem(200);
+    }
+  }
+  &__text{
+    font-size: rem(24);
+  }
+  &__tel{
+      font-size: rem(40);
+      color: $white;
+      small{
+        font-size: rem(24);
+      }
+      a[href*="tel:"] {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+        }
+  }
+  &__bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}

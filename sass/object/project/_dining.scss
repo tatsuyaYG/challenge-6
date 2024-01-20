@@ -1,0 +1,51 @@
+@use "../../foundation/" as *;
+
+.p-dining{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &__title{
+    margin-top: rem(70);
+    @include mq(md){
+      margin-top: 0;
+      position: absolute;
+      top: 140px;
+      left: rem(670);
+    }
+  }
+  &__content{
+    margin-top: rem(40);
+    @include mq(md){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: rem(295);
+    }
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mq(md){
+      order: 1;
+      align-items: flex-start;
+      margin-left: rem(120);
+    }
+  }
+  &__button{
+    margin-top: rem(30);
+    @include mq(md){
+      margin-top: rem(80);
+    }
+  }
+  &__img{
+    margin-top: rem(40);
+    @include mq(md){
+      margin-top: 0;
+    }
+  }
+  &__letter{
+    line-height: 2;
+  }
+}

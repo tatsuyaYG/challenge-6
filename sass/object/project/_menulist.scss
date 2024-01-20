@@ -6,7 +6,7 @@
   align-items: flex-end;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: all 0.5s;
   @include mq(md){
     opacity: 1;
     flex-direction: row;
@@ -49,3 +49,38 @@
     }
   }
 }
+
+.p-menulist--footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: none;
+  // @include mq(md){
+  //   flex-direction: row;
+  //   justify-content: flex-end;
+  //   align-items: center;
+    // margin-right: rem(80);
+    // gap: rem(32);
+  // }
+  &__item{
+    padding-bottom: rem(16);
+    a{
+      color: $white;
+      line-height: 1.65;
+    }
+  }
+  &__resave{
+    width: rem(170);
+    height: rem(50);
+    border: solid 1px $white;
+    display: table;
+    padding-bottom: 0;
+    margin-top: rem(16);
+    a{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}
+

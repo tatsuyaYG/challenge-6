@@ -11,21 +11,13 @@
   }
 
   &__logo{
-    display: block;
-    height: rem(100);
-    width: rem(100);
     position: absolute;
     top: rem(20);
     left: rem(20);
     z-index: 1;
     @include mq(md){
-      height: rem(157);
-      width: rem(137);
       top: rem(24);
       left: rem(80);
-    }
-    img{
-      margin: auto;
     }
   }
 

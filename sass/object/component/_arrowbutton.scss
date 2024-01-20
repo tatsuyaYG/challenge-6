@@ -1,0 +1,16 @@
+@use "../../foundation/" as *;
+
+.c-arrowbutton{
+  display: block;
+  background-image: url(../../../image/arrowbutton-black.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem(34);
+  width: rem(34);
+  border: solid 1px $black;
+  border-radius: rem(34);
+  &:hover{
+    background-image: url(../../../image/arrowbutton-white.png);
+    background-color: $black;
+  }
+}
