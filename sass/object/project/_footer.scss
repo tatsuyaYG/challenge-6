@@ -8,9 +8,12 @@
   grid-template-rows: 0.7fr 0.3fr;
   gap: rem(20);
   font-size: rem(12);
-  padding: rem(20);
+  padding: rem(100) rem(25);
   @include mq(md){
-    padding: rem(160) rem(120);
+    padding-top: rem(160);
+    padding-left: rem(88);
+    padding-right: rem(144);
+    padding-bottom: rem(190);
   }
 
   &__logo{

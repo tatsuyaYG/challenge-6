@@ -24,7 +24,9 @@
 
     display: block;
     overflow: hidden;
-    height: 100%; /*-- 付け足し -- */
+    /*-- 付け足し -- */
+    height: 100%;
+    /* /付け足し */
 
 
     margin: 0;
@@ -59,7 +61,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    /* 付け足し */
+    /* /付け足し */
 
     /* display: block; */
     margin-left: auto;

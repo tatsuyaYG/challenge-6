@@ -27,77 +27,77 @@
   &__02{
     position: absolute;
     right: 0;
-    bottom: -140px;
-    height: 210px;
-    width: 200px;
+    bottom: rem(-140);
+    height: rem(210);
+    width: rem(200);
     z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
-        bottom: 40px;
+        bottom: rem(40);
       }
     }
     @include mq(md){
-      height: 370px;
-      width: 360px;
-      bottom: -110px;
+      height: rem(370);
+      width: rem(360);
+      bottom: rem(-110);
       img{
         &:nth-child(2){
-          bottom: 70px;
+          bottom: rem(70);
         }
       }
     }
-
   }
+
   &__03{
     position: absolute;
-    right: 30px;
-    top: 40px;
-    height: 100px;
-    width: 100px;
+    right: rem(30);
+    top: rem(40);
+    height: rem(100);
+    width: rem(100);
     z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
-        bottom: 63px;
-        right: 35px
+        bottom: rem(63);
+        right: rem(35);
       }
     }
     @include mq(md){
-      width: 200px;
-      top: 120px;
-      right: 80px;
+      width: rem(200);
+      top: rem(123);
+      right: rem(75);
       img{
         &:nth-child(2){
-          bottom: 30px;
-          right: 90px
+          bottom: rem(30);
+          right: rem(75);
         }
       }
     }
-
   }
+
   &__04{
     position: absolute;
-    left: 20px;
-    bottom: -100px;
-    height: 100px;
-    width: 100px;
+    left: rem(20);
+    bottom: rem(-100);
+    height: rem(100);
+    width: rem(100);
     z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
-        bottom: 65px;
-        right: -20px;
+        bottom: rem(65);
+        right: rem(-20);
       }
     }
     @include mq(md){
-      width: 200px;
-      left: 60px;
-      bottom: -50px;
+      width: rem(200);
+      left: rem(60);
+      bottom: rem(5);
       img{
         &:nth-child(2){
-          bottom: 30px;
-          right: -35px
+          bottom: rem(30);
+          right: rem(-35);
         }
       }
     }
@@ -105,25 +105,26 @@
 
   &__05{
     position: absolute;
-    right: 30px;
-    top: 40px;
-    height: 100px;
-    width: 100px;
+    right: rem(30);
+    top: rem(40);
+    height: rem(100);
+    width: rem(100);
     z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
-        top: -16px;
-        right: 22px
+        top: rem(-16);
+        right: rem(22);
       }
     }
     @include mq(md){
-      width: 200px;
-      top: 120px;
+      width: rem(200);
+      top: rem(88);
+      right: rem(118);
       img{
         &:nth-child(2){
-          top: -16px;
-          right: 22px;
+          top: rem(-30);
+          right: rem(50);
         }
       }
     }
@@ -132,25 +133,24 @@
   &__06{
     position: absolute;
     left: 0;
-    // top: 15px;
-    height: 150px;
-    width: 160px;
+    height: rem(150);
+    width: rem(160);
     z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
-        top: -2px;
-        left: 4px;
+        top: rem(-2);
+        left: rem(4);
       }
     }
     @include mq(md){
-      width: 337px;
-      height: 311px;
-      bottom: -235px;
+      width: rem(337);
+      height: rem(311);
+      bottom: rem(-235);
       img{
         &:nth-child(2){
-          bottom: 30px;
-          right: 90px
+          bottom: rem(30);
+          right: rem(90);
         }
       }
     }
@@ -158,26 +158,129 @@
 
   &__07{
     position: absolute;
-    right: 30px;
-    top:300px;
-    height: 100px;
-    width: 100px;
+    right: rem(30);
+    top: rem(30);
+    height: rem(100);
+    width: rem(100);
     z-index: -1;
     img{
       position: absolute;
       &:nth-child(2){
-        bottom: 63px;
-        right: 35px
+        bottom: rem(63);
+        right: rem(35);
       }
     }
     @include mq(md){
-      width: 200px;
-      top: 85px;
-      right: -105px;
+      width: rem(200);
+      top: rem(85);
+      right: rem(-90);
       img{
         &:nth-child(2){
-          bottom: 30px;
-          right: 90px
+          bottom: rem(30);
+          right: rem(75);
+        }
+      }
+    }
+  }
+
+  &__08{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: rem(150);
+    @include mq(md){
+      width: auto;
+    }
+  }
+
+  &__09{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: rem(150);
+    @include mq(md){
+      width: auto;
+    }
+  }
+
+  &__10{
+    position: absolute;
+    right: rem(205);
+    top: rem(14);
+    height: rem(100);
+    width: rem(100);
+    z-index: -1;
+    img{
+      position: absolute;
+      &:nth-child(2){
+        bottom: rem(63);
+        right: rem(35);
+      }
+    }
+    @include mq(md){
+      width: rem(200);
+      top: rem(688);
+      right: rem(-53);
+      img{
+        &:nth-child(2){
+          bottom: rem(30);
+          right: rem(75);
+        }
+      }
+    }
+  }
+
+  &__11{
+    position: absolute;
+    right: rem(30);
+    top: rem(-24);
+    height: rem(100);
+    width: rem(100);
+    z-index: -1;
+    img{
+      position: absolute;
+      &:nth-child(2){
+        bottom: rem(63);
+        right: rem(35);
+      }
+    }
+    @include mq(md){
+      width: rem(200);
+      top: rem(30);
+      right: rem(150);
+      img{
+        &:nth-child(2){
+          bottom: rem(30);
+          right: rem(75);
+        }
+      }
+    }
+  }
+
+  &__12{
+    position: absolute;
+    left: rem(20);
+    bottom: rem(-32);
+    height: rem(100);
+    width: rem(100);
+    z-index: -1;
+    img{
+      position: absolute;
+      &:nth-child(2){
+        bottom: rem(65);
+        right: rem(-20);
+      }
+    }
+    @include mq(md){
+      width: rem(200);
+      left: rem(160);
+      bottom: rem(16);
+      img{
+        &:nth-child(2){
+          bottom: rem(30);
+          right: rem(-35);
         }
       }
     }

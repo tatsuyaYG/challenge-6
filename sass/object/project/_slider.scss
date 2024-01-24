@@ -20,9 +20,10 @@
 }
 
 .p-slider--gallery{
-  width: 100%;
+  width: auto;
   &__item{
     margin:rem(20);
+    width: rem(300);
     img{
       height: 100%;
       width: 100%;

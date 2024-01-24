@@ -49,5 +49,13 @@ $(function () {
     dots: true,
     slidesToShow: 2,
     speed: 8000,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          centerPadding: "30px",
+        }
+      }
+    ]
   });
 });

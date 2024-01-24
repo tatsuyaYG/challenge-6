@@ -13,7 +13,7 @@
   *  Layout
   * ============================ */
 
-
+// @use "./layout/l-inner";
 
 /**
   *  Object
@@ -64,5 +64,6 @@
 @use "./object/utility/u-lineheight--50";
 @use "./object/utility/u-none";
 @use "./object/utility/_u-sns--footer.scss";
+@use "./object/utility/u-letterspacing--5";
 
 

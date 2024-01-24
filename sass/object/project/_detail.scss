@@ -1,6 +1,11 @@
 @use "../../foundation/" as *;
 
 .p-detail{
+  position: relative;
+  padding-bottom: rem(50);
+  @include mq(md){
+    padding-bottom: rem(162);
+  }
   &__content{
     display: flex;
     flex-direction: column;
@@ -10,7 +15,7 @@
       justify-content: center;
       align-items: stretch;
       margin-right: rem(30);
-      margin-top: rem(160);
+      margin-top: rem(130);
       gap: rem(40);
     }
   }
@@ -29,13 +34,13 @@
     writing-mode: vertical-rl;
     position: absolute;
     top: 0;
-    left: 0;
+    left: rem(-8);
     font-size: rem(60);
     font-weight: normal;
     color: $text-brown;
     line-height: 1.2;
     justify-content: flex-start;
-    letter-spacing: 0.04em;
+    letter-spacing: -0.2em;
   }
   &__titleEn{
     font-size: rem(14);
