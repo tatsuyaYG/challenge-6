@@ -30,3 +30,28 @@
     }
   }
 }
+
+.p-slider--num{
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: rem(20);
+  span:nth-child(2){
+    position: relative;
+    display: block;
+    width: rem(60);
+    &::before{
+      content: "";
+      position: absolute;
+      border-top: solid 1px $white;
+      width: 100%;
+    }
+  }
+  span:nth-child(1){
+    padding-right: rem(10);
+  }
+  span:nth-child(3){
+    padding-left: rem(10);
+  }
+}
