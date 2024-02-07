@@ -58,13 +58,6 @@
   align-items: flex-start;
   pointer-events: none;
   font-size: rem(15);
-  // @include mq(md){
-  //   flex-direction: row;
-  //   justify-content: flex-end;
-  //   align-items: center;
-    // margin-right: rem(80);
-    // gap: rem(32);
-  // }
   &__item{
     padding-bottom: rem(16);
     a{

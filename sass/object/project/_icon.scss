@@ -1,23 +1,5 @@
 @use "../../foundation/" as *;
 
-.p-icon--about{
-  // position: relative;
-  // height: rem(600);
-  // width: 100%;
-  // @include mq(md){
-  //   height: rem(800);
-  // }
-}
-.p-icon--guestroom{
-  // display: none;
-  // position: relative;
-  // height: rem(600);
-  // width: 100%;
-  // @include mq(md){
-    // height: rem(800);
-  // }
-}
-
 .p-icon{
   &__01{
     position: absolute;
