@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  pointer-events: none;
   opacity: 0;
   transition: all 0.5s;
   @include mq(md){
@@ -17,16 +16,11 @@
   }
   &__item{
     padding-top: rem(24);
+    z-index: 1;
     a{
       color: $white;
       line-height: calc(1.65);
       letter-spacing: 0.2em;
-
-      // transform: translate3d(0, 100%, 0);
-
-      // &.active{
-        // transform: translate3d(0, 0, 0);
-      // }
     }
   }
   &__resave{
@@ -56,7 +50,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  pointer-events: none;
   font-size: rem(15);
   &__item{
     padding-bottom: rem(16);

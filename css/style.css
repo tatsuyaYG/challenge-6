@@ -193,7 +193,7 @@ body {
 
 .c-arrowbutton {
   display: block;
-  background-image: url(../../../image/arrowbutton-black.png);
+  background-image: url(./../image/arrowbutton-black.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 2.125rem;
@@ -202,7 +202,7 @@ body {
   border-radius: 2.125rem;
 }
 .c-arrowbutton:hover {
-  background-image: url(../../../image/arrowbutton-white.png);
+  background-image: url(./../image/arrowbutton-white.png);
   background-color: #000;
 }
 
@@ -299,7 +299,6 @@ body {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  pointer-events: none;
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -326,6 +325,7 @@ body {
 }
 .p-menulist__item {
   padding-top: 1.5rem;
+  z-index: 1;
 }
 .p-menulist__item a {
   color: #fff;
@@ -367,7 +367,6 @@ body {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  pointer-events: none;
   font-size: 0.9375rem;
 }
 .p-menulist--footer__item {
