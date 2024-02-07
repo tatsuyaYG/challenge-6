@@ -14,7 +14,6 @@ $(function () {
       dots: false,
       slidesToShow: 1,
       speed: 1500,
-
     })
     .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
       $(".now-count").text(nextSlide + 1); // 現在のスライド番号の次のスライドになったら番号を+1
@@ -26,7 +25,6 @@ $(function () {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 0,
-    // centerMode: true,
     centerPadding: "30px",
     dots: false,
     slidesToShow: 3,
